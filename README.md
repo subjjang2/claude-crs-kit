@@ -1,6 +1,6 @@
-# llm-wiki-tools
+# claude-crs-kit
 
-> Karpathy식 **LLM Wiki 세컨드브레인**을 운영하는 Claude Code 플러그인 마켓플레이스.
+> CRS 팀의 Claude Code 플러그인 마켓플레이스. Karpathy식 **LLM Wiki 세컨드브레인** 운영 도구로 시작해, 훅·커맨드·스킬을 계속 추가해 나간다.
 
 원본(raw)을 던지면 LLM이 읽고 요약·엔티티·개념·테마 페이지를 만들고, 상호링크·인덱스·로그를
 자동으로 유지한다. 병목은 읽기/사고가 아니라 **bookkeeping**이고, 그 grunt work를 도구가 맡는다.
@@ -13,13 +13,13 @@
 ## 설치
 
 ```text
-/plugin marketplace add subjjang2/llm-wiki-marketplace
-/plugin install llm-wiki@llm-wiki-tools
+/plugin marketplace add subjjang2/claude-crs-kit
+/plugin install llm-wiki@claude-crs-kit
 ```
 
 설치하면 아래 커맨드 3종과 스킬 1종이 즉시 활성화된다. 업데이트는 `/plugin update llm-wiki`.
 
-> 로컬 경로로도 설치 가능: `/plugin marketplace add C:/dev_new/llm-wiki-marketplace`
+> 로컬 경로로도 설치 가능: `/plugin marketplace add C:/dev_new/claude-crs-kit`
 
 ---
 
@@ -116,7 +116,7 @@ log.md               # append-only 액션 로그
 ## 리포 구성
 
 ```text
-.claude-plugin/marketplace.json     # 마켓플레이스 정의 (llm-wiki-tools)
+.claude-plugin/marketplace.json     # 마켓플레이스 정의 (claude-crs-kit)
 plugins/llm-wiki/
   .claude-plugin/plugin.json
   commands/   wiki-ingest · wiki-query · wiki-lint

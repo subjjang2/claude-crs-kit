@@ -1,0 +1,31 @@
+{
+  "name": "llm-wiki-tools",
+  "id": "llm-wiki-tools",
+  "owner": {
+    "name": "khseobi2"
+  },
+  "metadata": {
+    "description": "Karpathy식 LLM Wiki 세컨드브레인 운영 도구 모음 — ingest/query/lint 커맨드 + AI-readiness 카토그래피 스킬",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "llm-wiki",
+      "source": "./plugins/llm-wiki",
+      "description": "raw 원본을 위키 페이지로 정리하고(ingest), 위키를 검색해 답하고(query), 정합성을 점검하는(lint) 커맨드와, 리포지토리의 AI-readiness를 점수화·시각화하는 ai-readiness-cartography 스킬",
+      "version": "1.0.0",
+      "author": {
+        "name": "khseobi2"
+      },
+      "keywords": [
+        "llm-wiki",
+        "second-brain",
+        "knowledge-base",
+        "ingest",
+        "lint",
+        "ai-readiness"
+      ],
+      "category": "workflow"
+    }
+  ]
+}

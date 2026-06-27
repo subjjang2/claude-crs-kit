@@ -1,0 +1,14 @@
+{
+  "name": "llm-wiki",
+  "description": "LLM Wiki 세컨드브레인 운영 도구 — ingest/query/lint 커맨드 + AI-readiness 카토그래피 스킬",
+  "version": "1.0.0",
+  "author": {
+    "name": "khseobi2"
+  },
+  "keywords": [
+    "llm-wiki",
+    "second-brain",
+    "knowledge-base",
+    "ai-readiness"
+  ]
+}

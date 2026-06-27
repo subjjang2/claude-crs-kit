@@ -1,0 +1,15 @@
+{
+  "name": "tdd-guard",
+  "description": "TDD 가드 훅 — 테스트 파일이 없는 구현 코드(Edit/Write)를 차단해 테스트 우선 작성을 강제한다. TS/JS 소스 대상, 설정·타입·컴포넌트·프레임워크 파일은 예외.",
+  "version": "1.0.0",
+  "author": {
+    "name": "khseobi2"
+  },
+  "keywords": [
+    "tdd",
+    "hook",
+    "pre-tool-use",
+    "test-first",
+    "guard"
+  ]
+}

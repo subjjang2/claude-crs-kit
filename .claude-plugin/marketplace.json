@@ -5,8 +5,8 @@
     "name": "khseobi2"
   },
   "metadata": {
-    "description": "Karpathy식 LLM Wiki 세컨드브레인 운영 도구 모음 — ingest/query/lint 커맨드 + AI-readiness 카토그래피 스킬",
-    "version": "1.0.0"
+    "description": "CRS 팀 Claude Code 플러그인 마켓플레이스 — LLM Wiki 세컨드브레인 도구(ingest/query/lint + AI-readiness 카토그래피)와 TDD 가드 훅을 묶음",
+    "version": "1.1.0"
   },
   "plugins": [
     {
@@ -24,6 +24,23 @@
         "ingest",
         "lint",
         "ai-readiness"
+      ],
+      "category": "workflow"
+    },
+    {
+      "name": "tdd-guard",
+      "source": "./plugins/tdd-guard",
+      "description": "테스트 파일이 없는 구현 코드(Edit/Write)를 PreToolUse 훅으로 차단해 테스트 우선 작성을 강제한다. TS/JS 소스 대상, 설정·타입·컴포넌트·프레임워크 파일은 예외",
+      "version": "1.0.0",
+      "author": {
+        "name": "khseobi2"
+      },
+      "keywords": [
+        "tdd",
+        "hook",
+        "pre-tool-use",
+        "test-first",
+        "guard"
       ],
       "category": "workflow"
     }

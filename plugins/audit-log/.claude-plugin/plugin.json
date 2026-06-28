@@ -1,0 +1,16 @@
+{
+  "name": "audit-log",
+  "description": "감사 로그 훅 — 모든 툴 호출의 tool_input/tool_response를 PostToolUse 단계에서 .claude/audit.jsonl에 append 한다. 결과는 4000자에서 truncate, 예외는 전부 삼키는 fail-open.",
+  "version": "1.0.0",
+  "author": {
+    "name": "khseobi2"
+  },
+  "keywords": [
+    "audit",
+    "hook",
+    "post-tool-use",
+    "logging",
+    "observability",
+    "jsonl"
+  ]
+}

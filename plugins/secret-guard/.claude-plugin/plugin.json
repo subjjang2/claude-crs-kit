@@ -1,0 +1,16 @@
+{
+  "name": "secret-guard",
+  "description": "시크릿 가드 훅 — 파일 내용·셸 명령에 실 API 키/토큰/개인키가 하드코딩되면 PreToolUse 단계에서 차단한다. 고신뢰 접두사+길이 패턴으로 오탐 최소화, placeholder는 허용.",
+  "version": "1.0.0",
+  "author": {
+    "name": "khseobi2"
+  },
+  "keywords": [
+    "secret",
+    "hook",
+    "pre-tool-use",
+    "security",
+    "guard",
+    "credential-scan"
+  ]
+}

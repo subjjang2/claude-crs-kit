@@ -5,8 +5,8 @@
     "name": "khseobi2"
   },
   "metadata": {
-    "description": "CRS 팀 Claude Code 플러그인 마켓플레이스 — LLM Wiki 세컨드브레인 도구(ingest/query/lint + AI-readiness 카토그래피), TDD 가드 훅, 토큰 효율 분석 대시보드, PR 코드 리뷰 게이트, 시크릿/감사로그/비용 가드 훅을 묶음",
-    "version": "1.4.0"
+    "description": "CRS 팀 Claude Code 플러그인 마켓플레이스 — LLM Wiki 세컨드브레인 도구(ingest/query/lint + AI-readiness 카토그래피), TDD 가드 훅, 토큰 효율 분석 대시보드, PR 코드 리뷰 게이트, 시크릿/감사로그 훅을 묶음",
+    "version": "1.5.0"
   },
   "plugins": [
     {
@@ -113,25 +113,6 @@
         "logging",
         "observability",
         "jsonl"
-      ],
-      "category": "workflow"
-    },
-    {
-      "name": "cost-guard",
-      "source": "./plugins/cost-guard",
-      "description": "transcript에서 세션 누적 비용을 재계산해 절대 한도(HARD) 도달 시 이후 작업을 차단(서킷브레이커)하고, 평소(최근 세션 중앙값)의 N배 초과 급증 시 경고하는 비용 가드 훅. SessionEnd로 비용 이력 기록, Telegram 알림 연동",
-      "version": "1.0.0",
-      "author": {
-        "name": "khseobi2"
-      },
-      "keywords": [
-        "cost",
-        "hook",
-        "pre-tool-use",
-        "session-end",
-        "circuit-breaker",
-        "budget",
-        "telegram"
       ],
       "category": "workflow"
     }

@@ -1,0 +1,15 @@
+{
+  "name": "improve-token-efficiency",
+  "description": "Claude Code 세션 JSONL 로그를 파싱해 레포 단위 토큰·캐시 효율·비용·점수를 집계하고, HTML 대시보드와 $ 절감안을 생성하는 스킬.",
+  "version": "1.0.0",
+  "author": {
+    "name": "khseobi2"
+  },
+  "keywords": [
+    "token-efficiency",
+    "cost-analysis",
+    "session-report",
+    "cache-hit-ratio",
+    "dashboard"
+  ]
+}

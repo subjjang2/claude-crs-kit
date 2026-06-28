@@ -5,8 +5,8 @@
     "name": "khseobi2"
   },
   "metadata": {
-    "description": "CRS 팀 Claude Code 플러그인 마켓플레이스 — LLM Wiki 세컨드브레인 도구(ingest/query/lint + AI-readiness 카토그래피)와 TDD 가드 훅을 묶음",
-    "version": "1.1.0"
+    "description": "CRS 팀 Claude Code 플러그인 마켓플레이스 — LLM Wiki 세컨드브레인 도구(ingest/query/lint + AI-readiness 카토그래피), TDD 가드 훅, 토큰 효율 분석 대시보드를 묶음",
+    "version": "1.2.0"
   },
   "plugins": [
     {
@@ -41,6 +41,23 @@
         "pre-tool-use",
         "test-first",
         "guard"
+      ],
+      "category": "workflow"
+    },
+    {
+      "name": "improve-token-efficiency",
+      "source": "./plugins/improve-token-efficiency",
+      "description": "Claude Code 세션 JSONL 로그를 파싱해 레포 단위 토큰·캐시 효율·비용·점수를 집계하고, Chart.js 기반 HTML 대시보드와 $ 절감안을 생성하는 improve-token-efficiency 스킬",
+      "version": "1.0.0",
+      "author": {
+        "name": "khseobi2"
+      },
+      "keywords": [
+        "token-efficiency",
+        "cost-analysis",
+        "session-report",
+        "cache-hit-ratio",
+        "dashboard"
       ],
       "category": "workflow"
     }

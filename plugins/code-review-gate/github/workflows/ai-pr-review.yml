@@ -1,0 +1,35 @@
+name: AI PR Review
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+
+permissions:
+  contents: read
+  pull-requests: write
+  issues: write # risk:* 라벨 부착(라벨은 issues API)
+
+jobs:
+  review:
+    # fork에서 온 PR은 Secrets에 접근할 수 없어 LLM_API_KEY가 비어 있음 → 스킵.
+    if: github.event.pull_request.head.repo.full_name == github.repository
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 24
+
+      - name: Install review script dependencies
+        run: npm install --prefix .github/scripts
+
+      - name: AI PR review
+        run: node .github/scripts/ai-review.mjs
+        env:
+          OPENAI_API_KEY: ${{ secrets.LLM_API_KEY }}
+          OPENAI_BASE_URL: https://correct.seob-i.com/v1
+          OPENAI_MODEL: qwen3.6-35b-a3b-prismaquant
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          REPO: ${{ github.repository }}
+          PR_NUMBER: ${{ github.event.pull_request.number }}

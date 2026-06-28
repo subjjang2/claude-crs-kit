@@ -1,0 +1,17 @@
+{
+  "name": "code-review-gate",
+  "description": "PR 코드 리뷰 게이트 — PR 생성 전 /code-review 완료를 강제하는 로컬 PreToolUse 훅과, PR diff를 LLM으로 5축 Risk Score 채점·코멘트하는 GitHub Actions 워크플로우(ai-pr-review)를 묶음.",
+  "version": "1.0.0",
+  "author": {
+    "name": "khseobi2"
+  },
+  "keywords": [
+    "pr",
+    "code-review",
+    "gate",
+    "pre-tool-use",
+    "github-actions",
+    "ai-review",
+    "risk-score"
+  ]
+}

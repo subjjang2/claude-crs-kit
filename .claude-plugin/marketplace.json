@@ -5,8 +5,8 @@
     "name": "khseobi2"
   },
   "metadata": {
-    "description": "CRS 팀 Claude Code 플러그인 마켓플레이스 — LLM Wiki 세컨드브레인 도구(ingest/query/lint + AI-readiness 카토그래피), TDD 가드 훅, 토큰 효율 분석 대시보드를 묶음",
-    "version": "1.2.0"
+    "description": "CRS 팀 Claude Code 플러그인 마켓플레이스 — LLM Wiki 세컨드브레인 도구(ingest/query/lint + AI-readiness 카토그래피), TDD 가드 훅, 토큰 효율 분석 대시보드, PR 코드 리뷰 게이트를 묶음",
+    "version": "1.3.0"
   },
   "plugins": [
     {
@@ -58,6 +58,25 @@
         "session-report",
         "cache-hit-ratio",
         "dashboard"
+      ],
+      "category": "workflow"
+    },
+    {
+      "name": "code-review-gate",
+      "source": "./plugins/code-review-gate",
+      "description": "PR 생성 전 /code-review 완료를 강제하는 로컬 PreToolUse 훅과, PR diff를 LLM으로 5축 Risk Score 채점·코멘트하는 GitHub Actions(ai-pr-review)를 묶은 PR 코드 리뷰 게이트",
+      "version": "1.0.0",
+      "author": {
+        "name": "khseobi2"
+      },
+      "keywords": [
+        "pr",
+        "code-review",
+        "gate",
+        "pre-tool-use",
+        "github-actions",
+        "ai-review",
+        "risk-score"
       ],
       "category": "workflow"
     }
